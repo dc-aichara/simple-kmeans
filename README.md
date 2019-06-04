@@ -8,9 +8,9 @@ cd simple-kmeans
 $ python kmeans-clustering.py 3 test_data/test.csv 50
 
 ```
-### Results:
+### Results
 
-Centroids.csv
+centroids.csv
 ```text
           x         y
 0  0.745314  0.722009
@@ -18,7 +18,7 @@ Centroids.csv
 2  0.259475  0.456805
 ```
 
-Cluster.csv
+cluster.csv
 ```text
            x         y  classes
 0   0.929204  0.406991        1
