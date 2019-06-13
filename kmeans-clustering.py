@@ -21,7 +21,7 @@ def k_means(k, df_points, max_iters):
     df.columns = ['x', 'y']
     points = df.values
 
-    # Initiate with first three points as centroids
+    # Initiate with first k points as centroids
     centroids = []
     for i in range(0, k):
         centroids.append(df.values[i])
