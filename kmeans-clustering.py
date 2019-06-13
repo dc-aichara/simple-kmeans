@@ -74,6 +74,12 @@ def k_means(k, df_points, max_iters):
     return df, centroids
 
 
-if __name__ == '__main__':
+def main():
     k_means(int(sys.argv[1]), sys.argv[2], int(sys.argv[3]))
+
+
+if __name__ == '__main__':
+    main()
+
+
 
