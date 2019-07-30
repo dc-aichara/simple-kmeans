@@ -35,7 +35,7 @@ def k_means(k, df_points, max_iters):
                 dis.append(dist(point, centroids[i]))
             df['distance_{}'.format(i)] = dis
 
-        # Define classes bases on maximum distance between points and centroids
+        # Define classes bases on distance between points and centroids
         classes = []
         for j in range(len(df)):
             c = df[df.columns.tolist()[2:5]].values[j].tolist()
@@ -52,7 +52,7 @@ def k_means(k, df_points, max_iters):
 
     # Save Clusters and Centroids
     df = df[['x', 'y', 'classes']]
-    df[['x', 'y', 'classes']].to_csv('results/cluster.csv', index=False)
+    df.to_csv('results/cluster.csv', index=False)
     centroids.to_csv('results/centroids.csv', index=False)
 
     # Let's Plot the results
