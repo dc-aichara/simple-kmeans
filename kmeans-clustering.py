@@ -35,7 +35,7 @@ def k_means(k, df_points, max_iters):
                 dis.append(dist(point, centroids[i]))
             df['distance_{}'.format(i)] = dis
 
-        # Define classes bases on distance between points and centroids
+        # Define classes based on distance between points and centroids
         classes = []
         for j in range(len(df)):
             c = df[df.columns.tolist()[2:5]].values[j].tolist()
